@@ -140,6 +140,7 @@ def compute_trajectories(event):
             Cart.select()
                 .order_by(Cart.time_stamp.desc())
                 .where(Cart.tag_id == cart.tag_id)
+                .where(Cart.time_stamp % "*2016-07-07*")
                 .where(Cart.x > 0.).where(Cart.y > 0.)
         )
 

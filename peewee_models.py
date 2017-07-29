@@ -1,7 +1,7 @@
 from peewee import *
 
 # Data Base File (SQLite)
-db = SqliteDatabase('database/sqlite/testset.db')
+db = SqliteDatabase('database/sqlite/july1stweek.db')
 
 
 class BaseModel(Model):
